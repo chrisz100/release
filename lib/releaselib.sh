@@ -1143,7 +1143,7 @@ release::set_globals () {
     fi
   fi
 
-  RELEASE_BUCKET="kubernetes-release"
+  RELEASE_BUCKET="sw-kubernetes-release"
   if [[ $GCP_USER =~ "@google.com" ]]; then
     WRITE_RELEASE_BUCKETS=("$RELEASE_BUCKET")
     READ_RELEASE_BUCKETS=("$RELEASE_BUCKET")
@@ -1156,10 +1156,10 @@ release::set_globals () {
   fi
 
   # The "production" GCR path is now multi-region alias
-  GCRIO_PATH_PROD="k8s.gcr.io"
-  GCRIO_PATH_PROD_PUSH="gcr.io/google-containers"
+  GCRIO_PATH_PROD="gcr.io/sw-test-177709"
+  GCRIO_PATH_PROD_PUSH="gcr.io/sw-test-177709"
   # The "test" GCR path
-  GCRIO_PATH_TEST="gcr.io/kubernetes-release-test"
+  GCRIO_PATH_TEST="gcr.io/sw-test-177709"
 
   if ((FLAGS_nomock)); then
     GCRIO_PATH="${FLAGS_gcrio_path:-$GCRIO_PATH_PROD}"

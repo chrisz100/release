@@ -27,12 +27,12 @@ JCURL="curl -g -s --fail --retry 10"
 GITHUB_API='https://api.github.com'
 GITHUB_API_GRAPHQL="${GITHUB_API}/graphql"
 K8S_GITHUB_API_ROOT="${GITHUB_API}/repos"
-K8S_GITHUB_API="$K8S_GITHUB_API_ROOT/kubernetes/kubernetes"
+K8S_GITHUB_API="$K8S_GITHUB_API_ROOT/chrisz100/kubernetes"
 K8S_GITHUB_RAW_ORG='https://raw.githubusercontent.com/kubernetes'
 
 K8S_GITHUB_SEARCHAPI_ROOT='https://api.github.com/search/issues?per_page=100'
 K8S_GITHUB_SEARCHAPI="$K8S_GITHUB_SEARCHAPI_ROOT&q=is:pr%20repo:kubernetes/kubernetes%20"
-K8S_GITHUB_URL='https://github.com/kubernetes/kubernetes'
+K8S_GITHUB_URL='https://github.com/chrisz100/kubernetes'
 if ((FLAGS_gcb)); then
   K8S_GITHUB_AUTH_ROOT="https://git@github.com/"
 else

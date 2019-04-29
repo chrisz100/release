@@ -384,10 +384,10 @@ logecho
 # Defaults to "list" operation
 COMMAND=${POSITIONAL_ARGV[0]:-"list"}
 ARG2=${POSITIONAL_ARGV[1]}
-PROJECT="kubernetes-release-test"
+PROJECT="sw-test-177709"
 # Append $PROJECT to GCLOUD
 GCLOUD+=" --project $PROJECT"
-BUCKET="kubernetes-release"
+BUCKET="sw-kubernetes-release"
 # disk size must take base image into consideration.
 # The amount specified is not what is "free"
 DISK_SIZE="300"
